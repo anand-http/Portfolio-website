@@ -10,7 +10,7 @@
 
 body {
     color: white;
-    background-color: rgba(0, 0, 0, 0.804);
+    background-color: rgba(0, 0, 0, 0.831);
 }
 
 .fa {
@@ -52,77 +52,6 @@ body {
 
 }
 
-/* sidebar media query */
-
-@media screen and (max-width:1037px) {
-
-    .infoContainer {
-        margin-top: 48px;
-    }
-
-    .sidebar {
-        left: 324px;
-    }
-
-    .sidebarGo {
-        transform: translateX(-281px);
-    }
-}
-
-@media screen and (max-width:801px) {
-    .infoContainer {
-        margin-top: 48px;
-    }
-
-    .sidebar {
-        left: 173px;
-    }
-
-    .sidebarGo {
-        transform: translateX(-129px);
-    }
-}
-
-@media screen and (max-width:623px) {
-    .infoContainer {
-        margin-top: 48px;
-    }
-
-    .sidebar {
-        left: 128px;
-    }
-
-    .sidebarGo {
-        transform: translateX(-83px);
-    }
-}
-
-@media screen and (max-width:451px) {
-
-    nav li {
-        margin: 0;
-        padding: 7px 4px;
-
-    }
-
-    .sidebar {
-        left: 45px;
-        transition: all 0.1s ease-in-out 0s;
-    }
-
-
-    .infoContainer {
-        margin-top: 48px;
-    }
-
-
-
-    .sidebarGo {
-        transform: translateX(-17px);
-    }
-
-
-}
 
 
 ul {
@@ -132,7 +61,7 @@ ul {
 nav li {
     list-style: none;
     font-size: 15px;
-    padding: 7px 4px;
+    padding: 7px 10px;
 }
 
 
@@ -145,6 +74,7 @@ nav li a {
 
 .navspan .fa {
     margin: 15px 20px;
+    font-size: 15px;
 }
 
 
@@ -155,8 +85,7 @@ nav li a div {
 
 
 .infoContainer {
-    /* background-color: hotpink; */
-    /* margin: 90px auto; */
+
     display: flex;
 }
 
@@ -167,7 +96,6 @@ nav li a div {
 }
 
 .devpic {
-    /* border: 1px solid red; */
     margin-top: 30px;
 }
 
@@ -269,7 +197,7 @@ form {
 
 .para {
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 
@@ -284,29 +212,7 @@ i {
 }
 
 
-/* contact media qurey */
 
-@media screen and (max-width:731px) {
-
-    .contact {
-        flex-direction: column;
-    }
-
-    .form {
-        width: 100%;
-    }
-
-    form {
-        width: 100%;
-    }
-
-    .pinfo {
-        margin: auto;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-}
 
 /* About css */
 
@@ -411,32 +317,17 @@ i {
 }
 
 
-/* media query of about */
 
-@media screen and (max-width:990px) {
-    .about_main {
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .about2a {
-        font-size: 13px;
-    }
-
-    .about2b {
-        font-size: 13px;
-    }
-
-
-}
 
 
 
 /* PORTFOLIO CSS
  */
+
+.portfolioPara {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 .port_main img {
     transition: transform 0.2s ease-in-out;
@@ -450,7 +341,6 @@ i {
 
 .port_main {
     display: flex;
-    /* background-color: blue; */
     flex-flow: wrap;
     flex-direction: row;
     justify-content: center;
@@ -460,8 +350,17 @@ i {
     width: 350px;
     height: 250px;
     border-radius: 13px;
-    margin: 10px;
+    margin: 30px 12px;
     text-align: center;
+}
+
+.port_main h4 {
+    margin: 10px 0;
+    color: white;
+}
+
+.port_main h4:hover {
+    color: gold;
 }
 
 .side {
@@ -476,29 +375,8 @@ i {
 
 }
 
-@media screen and (max-width:1206px) {
-    .port_main div {
-        width: 300px;
-        height: 250px;
-    }
 
-    .port_main div img {
-        width: 300px;
 
-    }
-}
-
-@media screen and (max-width:737px) {
-    .port_main div {
-        width: 450px;
-        height: 250px;
-    }
-
-    .port_main div img {
-        width: 450px;
-
-    }
-}
 
 
 .burgurr img {
@@ -520,32 +398,6 @@ i {
 
 }
 
-/* home media query */
-
-@media screen and (max-width:887px) {
-    .devpic {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 40px;
-    }
-
-    .devpic img {
-        height: 35vh;
-
-    }
-
-    .infoContainer {
-        flex-direction: column;
-        text-align: justify;
-    }
-
-    .button {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
 
 
 
@@ -559,11 +411,11 @@ i {
 }
 
 .education {
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .skills {
-    margin: 0 20px;
+    margin: 0 10px;
     margin-bottom: 50px;
 
 }
@@ -576,12 +428,10 @@ i {
 }
 
 
-/* portfolio css */
 
 
 .main {
-    /* text-align: center;
-    margin: auto; */
+
     margin: auto;
     width: 90%;
 }
@@ -589,9 +439,7 @@ i {
 
 
 
-
-
-/* blogs css                  */
+/* blogs css  */
 
 .containerblog {
     width: 100%;
@@ -627,12 +475,10 @@ i {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     margin: 25px auto;
-    /* border: 1px solid blue; */
 }
 
 .card {
-    /* margin: 20px; */
-    /* border: 1px solid yellow; */
+
     width: 100%;
     position: relative;
 }
@@ -695,6 +541,117 @@ i {
 
 
 
+
+
+
+/* media quariess */
+
+
+
+
+/* sidebar media query */
+
+@media screen and (max-width:1037px) {
+
+    .infoContainer {
+        margin-top: 48px;
+    }
+
+    .sidebar {
+        left: 324px;
+    }
+
+    .sidebarGo {
+        transform: translateX(-281px);
+    }
+}
+
+@media screen and (max-width:801px) {
+    .infoContainer {
+        margin-top: 48px;
+    }
+
+    .sidebar {
+        left: 173px;
+    }
+
+    .sidebarGo {
+        transform: translateX(-129px);
+    }
+}
+
+@media screen and (max-width:623px) {
+    .infoContainer {
+        margin-top: 48px;
+    }
+
+    .sidebar {
+        left: 128px;
+    }
+
+    .sidebarGo {
+        transform: translateX(-83px);
+    }
+}
+
+
+@media all and (max-width:451px) {
+
+
+    .navspan .fa {
+        margin: 10px 15px;
+        font-size: 18px;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .burgurr {
+        margin-left: 13px;
+        margin-top: 18px;
+        border: 1px solid rgb(224, 224, 230);
+        padding: 19px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .burgurr img {
+        position: absolute;
+        top: 27px;
+        left: 21px;
+    }
+
+    .sidebar {
+        left: 45px;
+        transition: all 0.1s ease-in-out 0s;
+    }
+
+
+    .infoContainer {
+        margin-top: 48px;
+    }
+
+
+
+    .sidebarGo {
+        transform: translateX(-12px);
+    }
+
+
+}
+
+
+@media screen and (max-width:320px) {
+
+    .navspan .fa {
+        margin: 10px 8px;
+        font-size: 18px;
+    }
+}
+
+
 /* media query of blog */
 
 @media screen and (max-width:1131px) {
@@ -706,5 +663,180 @@ i {
 @media screen and (max-width:665px) {
     .cards {
         grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+/* home media query */
+
+@media screen and (max-width:887px) {
+    .devpic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .devpic img {
+        height: 35vh;
+
+    }
+
+    .infoContainer {
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    .button {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+/* contact media qurey */
+
+@media screen and (max-width:731px) {
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .pinfo {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
+
+
+/* media query of about */
+
+@media screen and (max-width:990px) {
+
+.abt1hr{
+    width: 100%;
+}
+
+    .education {
+        margin: 0;
+    }
+    
+    .skills {
+        margin: 0;
+        margin-bottom: 10px;
+    
+    }
+
+
+    .about_main {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .about2{
+        margin-left: 0;
+    }
+
+    .about2a {
+        font-size: 13px;
+    }
+
+    .about2b {
+        font-size: 13px;
+    }
+
+
+    .abtpic {
+        border: 5px solid yellow;
+        width: 70%;
+        height: 100%;
+    }
+
+
+
+    .abtpic img {
+        position: relative;
+        right: 20px;
+        bottom: 13px;
+        width: 100%;
+    }
+
+    
+    .but {
+        padding: 4px 5px;
+        margin: auto;
+    }
+
+
+}
+
+@media screen and (max-width:320px) {
+    .abtpic img {
+        bottom: 8px;
+    }
+
+    .about2a {
+        font-size: 11px;
+    }
+
+    .about2b {
+        font-size: 11px;
+    }
+
+
+}
+
+
+
+
+
+
+
+/* PORTFOLIO MEDIA QUERY */
+
+@media screen and (max-width:737px) {
+    .port_main div {
+        width: 450px;
+        height: 250px;
+    }
+
+    .port_main div img {
+        width: 450px;
+
+    }
+}
+
+@media screen and (max-width:1206px) {
+    .port_main div {
+        width: 300px;
+        height: 250px;
+    }
+
+    .port_main div img {
+        width: 300px;
+
     }
 }

@@ -596,12 +596,12 @@ i {
 
 
 @media all and (max-width:451px) {
-
-
     .navspan .fa {
-        margin: 10px 15px;
+        margin: 10px 8px;
         font-size: 18px;
     }
+
+
 
     .list {
         display: none;
